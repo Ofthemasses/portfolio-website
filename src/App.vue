@@ -13,7 +13,9 @@ import TheWelcome from './components/TheWelcome.vue'
   </header>
 
   <main>
-    <TheWelcome />
+      <div class="bg-blue-500 p-4">
+          <p class="text-white">Tailwind Test!</p>
+      </div>
   </main>
 </template>
 
