@@ -33,4 +33,4 @@ jobs:
           
       - name: Deploy via SFTP
         run: |
-          scp -i ~/.ssh/id_rsa.pem -P ${{ secrets.PORT }} -r ./build ${{ secrets.SFTP_USERNAME }}@${{ secrets.SFTP_SERVER }}.com:${{ secrets.HOST_PATH }}
+          scp -i ~/.ssh/id_rsa.pem -P ${{ secrets.PORT }} -r ./build ${{ secrets.SFTP_USERNAME }}@${{ secrets.SFTP_SERVER }}:${{ secrets.HOST_PATH }}
