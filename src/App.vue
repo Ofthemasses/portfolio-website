@@ -1,21 +1,16 @@
 <script lang="ts" setup>
-import HelloWorld from './components/HelloWorld.vue'
+import PortfolioHeader from './components/PortfolioHeader.vue'
 import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+      <PortfolioHeader msg="You did it!" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
   </header>
 
   <main>
-      <div class="bg-blue-500 p-4">
-          <p class="text-white">Tailwind Test!</p>
-      </div>
+      <router-view></router-view>
   </main>
 </template>
 
