@@ -12,6 +12,9 @@ interface Config {
 }
 
 const config: Config = {
+  build: {
+    outDir: '../finlay'
+  },
   plugins: [
     vue({
       template: {
