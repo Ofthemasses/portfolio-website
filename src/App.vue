@@ -3,16 +3,13 @@ import PortfolioHeader from './components/PortfolioHeader.vue'
 import TheWelcome from './components/TheWelcome.vue'
 </script>
 
-<template class="font-martian">
+<template>
   <header>
       <PortfolioHeader msg="My Portfolio" />
 
   </header>
 
-  <main class="bg-gray-700 h-screen py-16">
+  <main class="py-16 h-screen">
       <router-view></router-view>
   </main>
 </template>
-
-<style scoped>
-</style>
