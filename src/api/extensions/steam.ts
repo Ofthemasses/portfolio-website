@@ -1,6 +1,6 @@
 import { ProjectApi } from "../project-api";
 export const SteamProjects = new class extends ProjectApi {
-    apiKey = 'D5EF42EF56CF5487D56F3653698DF299';
+    apiKey = '723A0A5271B73F6D0B2B17A1B342ADCA';
     steamUserId = 'ofthemasses'; // The user's SteamID
     itemsPerPage = 100; // Number of items per page (maximum allowed by Steam API)
     fetchData(): Promise<[{Name: String, Link: String, Data: String}]> {
