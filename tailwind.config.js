@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+        fontFamily: {
+            // Override base font
+            'sans': 'Martian Mono Variable, sans-serif'
+        },
         keyframes: {
             'animated-gradient': {
                 '0%': { backgroundPosition: '0% 50%' },
