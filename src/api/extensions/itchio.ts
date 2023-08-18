@@ -5,4 +5,8 @@ export const ItchioProjects = new class extends ProjectApi {
         return new Promise(r => r([{"Name": "No Projects", "Link": "", "Data": ""}]));
     }
 
+    public apiName(): String {
+        return "";
+    }
+
 }

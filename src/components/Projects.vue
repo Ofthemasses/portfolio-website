@@ -6,9 +6,9 @@
                     <img class="filter brightness-[.3] absolute top-0 h-full w-full object-cover" :src="curImage">
                 </div>
             </transition>
-        <div class="absolute px-40 text-2xl text-gray-100">Steam Projects</div>
+        <div class="absolute px-40 text-5xl text-gray-100 font-light">{{ api.apiName() }}</div>
     </div>
-    <div class="grid grid-cols-4 gap-5 px-8">
+    <div class="grid grid-cols-4 gap-5 px-8 py-8">
         <a v-for="project in projects" :href="project.Link">
             <div class="bg-black max-w-md rounded overflow-hidden shadow-lg shadow-gray-600">
                 <img :src="project.Data.Image" v-if="project.Data.Image">
@@ -29,6 +29,7 @@ export default {
     name: "Projects",
     data() {
         return {
+            api: Empty,
             projects: [],
             imageIndex: 0
         };
@@ -53,15 +54,15 @@ export default {
         }
     },
     async mounted() {
-        Empty.fetchData().then(this.projects);
         switch (this.projectType) {
             case 'steam':
-                this.projects = await SteamProjects.fetchData();
+                this.api = SteamProjects;
                 break;
             case 'itchio':
-                this.projects = await ItchioProjects.fetchData();
+                this.api = ItchioProjects;
                 break;
         }
+        this.projects = await this.api.fetchData();
         this.startSlides();
     }
 };

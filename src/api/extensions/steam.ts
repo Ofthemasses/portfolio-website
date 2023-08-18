@@ -26,4 +26,8 @@ export const SteamProjects = new class extends ProjectApi {
         return response.data.response; // Return the parsed JSON data
     }
 
+    public apiName(): String {
+        return "STEAM WORKSHOP";
+    }
+
 }
