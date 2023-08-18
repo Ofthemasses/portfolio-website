@@ -30,6 +30,7 @@ jobs:
           server: ${{ secrets.SFTP_SERVER }}
           username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PEM_PRIVATE_KEY }}
+          log-level: verbose
           port: ${{ secrets.PORT }}
           local-dir: build/  # Change this to your build directory path
           server-dir: ${{ secrets.HOST_PATH }}  # Change this to the path on the SFTP server
