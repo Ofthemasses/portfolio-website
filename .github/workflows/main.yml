@@ -27,7 +27,7 @@ jobs:
       - name: Set-Up SSH Key
         run: |
           mkdir -p ~/.ssh
-          echo "$SFTP_PEM_PRIVATE_KEY" > ~/.ssh/id_rsa.pem
+          echo "{{ secrets.SFTP_PEM_PRIVATE_KEY }}" > ~/.ssh/id_rsa.pem
           chmod 600 ~/.ssh/id_rsa.pem
           ssh-keyscan -p ${{ secrets.PORT }} -t rsa ${{ secrets.SFTP_SERVER }} >> ~/.ssh/known_hosts
           
