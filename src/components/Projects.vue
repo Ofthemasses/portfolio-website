@@ -3,8 +3,8 @@
         <a v-for="project in projects" :href="project['Link']">
             <div class="bg-black max-w-md rounded overflow-hidden shadow-lg shadow-gray-600">
                 <img :src="project['Data']['Image']" v-if="project['Data']['Image']">
-                <div class="flex items-center h-16 mx-2">
-                    <span class="text-xl font-bold text-gray-400">{{ project['Name'] }}</span>
+                <div class="flex items-center h-16 mx-4">
+                    <span class="text-lg font-extrabold text-gray-400">{{ project['Name'] }}</span>
                 </div>
             </div>
         </a>
