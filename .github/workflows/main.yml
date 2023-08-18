@@ -24,14 +24,13 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to SFTP
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        with:
-          server: ${{ secrets.SFTP_SERVER }}
-          username: ${{ secrets.SFTP_USERNAME }}
-          password: ${{ secrets.SFTP_PEM_PRIVATE_KEY }}
-          log-level: verbose
-          timeout: 180000
-          port: ${{ secrets.PORT }}
-          local-dir: build/  # Change this to your build directory path
-          server-dir: ${{ secrets.HOST_PATH }}  # Change this to the path on the SFTP server
+      - name: Set-Up SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo ${{ secrets.SFTP_PEM_PRIVATE_KEY }} >> ~/.ssh/id_rsa.pem
+          chmod 600 ~/.ssh/id_rsa.pem
+          ssh-keyscan -t rsa ${{ secrets.SFTP_SERVER }} >> ~/.ssh/known_hosts
+          
+      - name: Deploy via SFTP
+        run: |
+          scp -i ~/.ssh/id_rsa.pem -P ${{ secrets.PORT }} -r ./build ${{ secrets.SFTP_USERNAME }}@${{ secrets.SFTP_SERVER }}.com:${{ secrets.HOST_PATH }}
