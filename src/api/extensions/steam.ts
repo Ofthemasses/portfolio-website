@@ -4,9 +4,9 @@ import axios from "axios";
 export const SteamProjects = new class extends ProjectApi {
     steamUserId = '76561198138682353'; // The user's SteamID
     steamCollectionId = '3020585581';
-    async fetchData(): Promise<[{ Name: String, Link: String, Data: {} }]> {
+    async fetchData(): Promise<{ Name: String, Link: String, Data: {} }[]> {
         const rawdata = await this.getAllWorkshopEntries(); // Wait for data to be retrieved
-        const data = [];
+        const data: {Name: String, Link: String, Data: {}}[] = [];
         for (let file of rawdata["publishedfiledetails"]){
             data.push({
                 Name: file["title"],
@@ -14,8 +14,7 @@ export const SteamProjects = new class extends ProjectApi {
                 Data: {Image: file["preview_url"]}
             });
         }
-        console.log(data);
-        return [{Name: "", Link: "", Data: [{}]}];
+        return data;
     }
 
     private async getAllWorkshopEntries(): Promise<any> {
