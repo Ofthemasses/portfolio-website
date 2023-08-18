@@ -9,7 +9,7 @@ import TheWelcome from './components/TheWelcome.vue'
 
   </header>
 
-  <main>
+  <main class="bg-gray-700 h-screen py-20 px-8">
       <router-view></router-view>
   </main>
 </template>

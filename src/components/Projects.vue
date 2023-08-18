@@ -1,6 +1,13 @@
 <template>
-    <div>
-        <h1>TESTING {{ projects.fetchData() }}</h1>
+    <div class="grid grid-cols-4 gap-5">
+        <a v-for="project in projects" :href="project['Link']">
+            <div class="bg-black max-w-md rounded overflow-hidden shadow-lg shadow-gray-600">
+                <img :src="project['Data']['Image']" v-if="project['Data']['Image']">
+                <div class="flex items-center h-16 mx-2">
+                    <span class="text-xl font-bold text-gray-400">{{ project['Name'] }}</span>
+                </div>
+            </div>
+        </a>
     </div>
 </template>
 
@@ -21,10 +28,10 @@ export default {
             return this.$route.params.projectType;
         }
     },
-    created() {
+    async mounted() {
         switch (this.projectType) {
             case 'steam':
-                this.projects = SteamProjects;
+                this.projects = await SteamProjects.fetchData();
                 break;
             case 'itchio':
                 this.projects = ItchioProjects;
