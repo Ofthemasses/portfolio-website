@@ -3,12 +3,12 @@
             {
                 Name: String,
                 Link: String,
-                Data: String}
-        ]>
+                Data: {}
+            }]>
     }
 
     export const Empty: ProjectApi = new class extends ProjectApi {
-        fetchData(): Promise<[{Name: String, Link: String, Data: String}]> {
-            return new Promise(r => r([{"Name": "No Projects", "Link": "", "Data": ""}]));
+        fetchData(): Promise<[{Name: String, Link: String, Data: {}}]> {
+            return new Promise(r => [{"Name": "No Projects", "Link": "", "Data": {"":""}}]);
         }
     }

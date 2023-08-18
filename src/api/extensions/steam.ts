@@ -1,47 +1,30 @@
 import { ProjectApi } from "../project-api";
+import axios from "axios";
 
-const { STEAM_API_KEY } = import.meta.env;
 export const SteamProjects = new class extends ProjectApi {
-    apiKey = STEAM_API_KEY;
-    steamUserId = 'ofthemasses'; // The user's SteamID
-    itemsPerPage = 100; // Number of items per page (maximum allowed by Steam API)
-    fetchData(): Promise<[{Name: String, Link: String, Data: String}]> {
-        this.getAllWorkshopEntries();
-        return new Promise(function(resolve, reject) {
-            resolve( [{"Name": "No Projects", "Link": "", "Data": ""}]);
-            reject("BRUH");
-        });
-    }
-    private async getAllWorkshopEntries() {
-        let page = 1;
-        let allEntries: any[] = [];
-        while (true) {
-            const startItem = (page - 1) * this.itemsPerPage;
-            const apiUrl = `https://api.steampowered.com/ISteamRemoteStorage/GetPublishedFileDetails/v1/
-            ?key=${this.apiKey}&steamid=${this.steamUserId}&startindex=${startItem}&pagesize=${this.itemsPerPage}`;
-
-            try {
-                const response = await fetch(apiUrl);
-                const data = await response.json();
-
-                if (data.response && data.response.publishedfiledetails) {
-                    const workshopEntries = data.response.publishedfiledetails;
-                    if (workshopEntries.length === 0) {
-                        // No more entries to retrieve
-                        break;
-                    }
-                    allEntries = allEntries.concat(workshopEntries);
-                    page++;
-                } else {
-                    console.error('Error retrieving workshop entries.');
-                    break;
-                }
-            } catch (error) {
-                console.error('An error occurred:', error);
-                break;
-            }
+    steamUserId = '76561198138682353'; // The user's SteamID
+    steamCollectionId = '3020585581';
+    async fetchData(): Promise<[{ Name: String, Link: String, Data: {} }]> {
+        const rawdata = await this.getAllWorkshopEntries(); // Wait for data to be retrieved
+        const data = [];
+        for (let file of rawdata["publishedfiledetails"]){
+            data.push({
+                Name: file["title"],
+                Link: `https://steamcommunity.com/sharedfiles/filedetails/?id=${file["publishedfileid"]}`,
+                Data: {Image: file["preview_url"]}
+            });
         }
-        console.log('All workshop entries:', allEntries);
+        console.log(data);
+        return [{Name: "", Link: "", Data: [{}]}];
+    }
+
+    private async getAllWorkshopEntries(): Promise<any> {
+        let url: string = `https://toru.studio/toru-api-handler/steam/getjson.php` +
+            `?user=${this.steamUserId}&collection=${this.steamCollectionId}`;
+        const response = await axios.get(url, {
+            responseType: "json"
+        });
+        return response.data.response; // Return the parsed JSON data
     }
 
 }
