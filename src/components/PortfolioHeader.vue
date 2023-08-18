@@ -7,7 +7,7 @@ defineProps({ msg: {
 </script>
 
 <template>
-    <div class="bg-black fixed w-full z-10">
+    <div class="bg-black fixed w-full z-50">
       <div class="flex items-center h-16 px-4">
         <h1 class="text-4xl font-semibold bg-gradient-to-r from-purple-400 via-gray-600 to-purple-400 text-transparent
         bg-clip-text animate-header-gradient bg-1000">{{ msg }}</h1>

@@ -1,16 +1,18 @@
 <template>
-    <div class="relative flex items-center h-2/3">
-        <img class="filter brightness-[.3] absolute top-0 h-full w-full object-cover" :src="curImage">
-            <transition name="fade" mode="out-in">
-                <div :key="curImage">
-                    <img class="filter brightness-[.3] absolute top-0 h-full w-full object-cover" :src="curImage">
-                </div>
-            </transition>
+    <div class="relative flex items-center h-2/3 overflow-hidden z-10">
         <div class="absolute px-40 text-5xl text-gray-100 font-light">{{ api.apiName() }}</div>
     </div>
-    <div class="grid grid-cols-4 gap-5 px-8 py-8">
+    <div class="-z-10">
+        <img class="filter brightness-[.3] h-full fixed top-0 overflow-hidden w-full object-cover" :src="curImage">
+        <transition name="fade" mode="out-in">
+            <div :key="curImage">
+                <img class="filter brightness-[.3] h-full fixed top-0 w-full object-cover" :src="curImage">
+            </div>
+        </transition>
+    </div>
+    <div class="relative grid grid-cols-4 gap-5 px-8 py-8 bg-gradient-to-t from-gray-900 to-transparent">
         <a v-for="project in projects" :href="project.Link">
-            <div class="bg-black max-w-md rounded overflow-hidden shadow-lg shadow-gray-600">
+            <div class="bg-black max-w-md rounded overflow-hidden shadow-lg shadow-gray-800">
                 <img :src="project.Data.Image" v-if="project.Data.Image">
                 <div class="flex items-center h-16 mx-4">
                     <span class="text-lg font-extrabold text-gray-400">{{ project.Name }}</span>
