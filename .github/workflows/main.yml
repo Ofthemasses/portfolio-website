@@ -29,6 +29,6 @@ jobs:
         with:
           server: ${{ secrets.SFTP_SERVER }}
           username: ${{ secrets.SFTP_USERNAME }}
+          password: ${{ secrets.SFTP_PEM_PRIVATE_KEY }}
           local-dir: build  # Change this to your build directory path
           remote-dir: /path/to/remote/directory  # Change this to the path on the SFTP server
-          key: ${{ secrets.SFTP_PEM_PRIVATE_KEY }}
