@@ -13,7 +13,7 @@ interface Config {
 
 const config: Config = {
   build: {
-    outDir: '../www/finlay'
+    outDir: 'build'
   },
   plugins: [
     vue({
