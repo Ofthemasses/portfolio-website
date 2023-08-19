@@ -10,6 +10,6 @@ import TheWelcome from './components/TheWelcome.vue'
   </header>
 
   <main class="py-16 h-screen">
-      <router-view></router-view>
+      <router-view :key="$route.fullPath"></router-view>
   </main>
 </template>
