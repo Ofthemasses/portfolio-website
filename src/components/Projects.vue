@@ -3,7 +3,7 @@
         <div class="absolute px-40 text-5xl text-gray-100 font-light">{{ api.apiName() }}</div>
     </div>
     <div class="-z-10">
-      <img class="filter brightness-[.3] h-full fixed top-0 overflow-hidden w-full object-cover" :src="defaultImage">
+      <img class="transform scale-110 filter brightness-[.3] h-full fixed top-0 overflow-hidden w-full object-cover" :src="defaultImage">
       <img class="filter brightness-[.3] h-full fixed top-0 overflow-hidden w-full object-cover" :src="curImage">
         <transition name="fade" mode="out-in">
             <div :key="curImage">
