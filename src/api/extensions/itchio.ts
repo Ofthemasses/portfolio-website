@@ -2,7 +2,7 @@ import { ProjectApi } from "../project-api";
 import axios from "axios";
 
 export const ItchioProjects = new class extends ProjectApi {
-    async fetchData(): Promise<[{Name: String, Link: String, Data: String}]> {
+    async fetchData(): Promise<{Name: String, Link: String, Data: {}}[]> {
         const rawdata = await this.getItchGames(); // Wait for data to be retrieved
         const data: {Name: String, Link: String, Data: {}}[] = [];
         for (let game of rawdata["games"]){
