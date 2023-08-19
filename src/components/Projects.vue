@@ -26,6 +26,7 @@
 import { Empty } from '@/api/project-api';
 import { SteamProjects } from "@/api/extensions/steam";
 import { ItchioProjects } from "@/api/extensions/itchio";
+import { GithubProjects } from "@/api/extensions/github";
 
 export default {
     name: "Projects",
@@ -62,6 +63,9 @@ export default {
                 break;
             case 'itchio':
                 this.api = ItchioProjects;
+                break;
+            case 'github':
+                this.api = GithubProjects;
                 break;
         }
         this.projects = await this.api.fetchData();
