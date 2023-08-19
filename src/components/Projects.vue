@@ -12,9 +12,9 @@
     </div>
     <div class="relative grid grid-cols-4 gap-5 px-8 py-8 bg-gradient-to-t from-gray-900 to-transparent">
         <a v-for="project in projects" :href="project.Link">
-            <div class="bg-black max-w-md rounded overflow-hidden shadow-lg shadow-gray-800">
-                <img :src="project.Data.Image" v-if="project.Data.Image">
-                <div class="flex items-center h-16 mx-4">
+            <div class="bg-gray-900 max-w-md rounded overflow-hidden shadow-lg shadow-gray-800">
+                <img class="m-auto" :src="project.Data.Image" v-if="project.Data.Image">
+                <div class="bg-black flex items-center h-16 px-4">
                     <span class="text-lg font-extrabold text-gray-400">{{ project.Name }}</span>
                 </div>
             </div>
