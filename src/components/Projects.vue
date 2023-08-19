@@ -1,9 +1,14 @@
 <template>
+    <transition name="fade-loader" mode="out-in">
+      <div v-if="loading" :key="loading" class="bg-black fixed top-0 flex items-center justify-center z-20 w-screen h-screen">
+        <span class="text-9xl text-gray-200 animate-pulse">Ⲗ</span>
+      </div>
+    </transition>
     <div class="relative flex items-center h-2/3 overflow-hidden z-10">
         <div class="absolute px-40 text-5xl text-gray-100 font-light">{{ api.apiName() }}</div>
     </div>
     <div class="-z-10">
-      <img class="transform scale-110 filter brightness-[.3] h-full fixed top-0 overflow-hidden w-full object-cover" :src="defaultImage">
+      <img v-if="imageData.length == 0" class="transform scale-110 filter brightness-[.3] h-full fixed top-0 overflow-hidden w-full object-cover" :src="defaultImage">
       <img class="filter brightness-[.3] h-full fixed top-0 overflow-hidden w-full object-cover" :src="curImage">
         <transition name="fade" mode="out-in">
             <div :key="curImage">
@@ -41,7 +46,8 @@ export default {
             api: Empty,
             projects: [],
             imageIndex: 0,
-            defaultImage: "src/assets/DalleBackground.png"
+            defaultImage: "src/assets/DalleBackground.png",
+            loading: true
         };
     },
     computed: {
@@ -78,13 +84,20 @@ export default {
                 this.api = GithubProjects;
                 break;
         }
-        this.projects = await this.api.fetchData();
+        this.projects = await this.api.fetchData()
         this.startSlides();
+        this.loading = false;
     }
 };
 </script>
 
 <style scoped>
+.fade-loader-enter-active, .fade-loader-leave-active {
+  transition: opacity .5s;
+}
+.fade-loader-enter, .fade-loader-leave-to {
+  opacity: 0;
+}
 .fade-enter-active, .fade-leave-active {
     transition: opacity 2s;
 }
