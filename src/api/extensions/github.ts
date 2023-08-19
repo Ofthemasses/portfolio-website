@@ -9,7 +9,7 @@ export const GithubProjects = new class extends ProjectApi {
             data.push({
                 Name: repo["name"],
                 Link: repo["html_url"],
-                Data: {"" : ""}
+                Data: {"Description" : repo["description"]}
             });
         }
         return data;

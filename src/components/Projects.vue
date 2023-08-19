@@ -17,6 +17,11 @@
                 <div class="bg-black flex items-center h-16 px-4">
                     <span class="text-lg font-extrabold text-gray-400">{{ project.Name }}</span>
                 </div>
+              <div class="bg-black flex items-center h-32 px-4">
+                <span class="text-md font-bold text-gray-400" v-if="project.Data.Description">
+                  {{ project.Data.Description }}
+                </span>
+              </div>
             </div>
         </a>
     </div>
