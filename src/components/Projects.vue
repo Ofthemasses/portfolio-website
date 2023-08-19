@@ -3,7 +3,8 @@
         <div class="absolute px-40 text-5xl text-gray-100 font-light">{{ api.apiName() }}</div>
     </div>
     <div class="-z-10">
-        <img class="filter brightness-[.3] h-full fixed top-0 overflow-hidden w-full object-cover" :src="curImage">
+      <img class="filter brightness-[.3] h-full fixed top-0 overflow-hidden w-full object-cover" :src="defaultImage">
+      <img class="filter brightness-[.3] h-full fixed top-0 overflow-hidden w-full object-cover" :src="curImage">
         <transition name="fade" mode="out-in">
             <div :key="curImage">
                 <img class="filter brightness-[.3] h-full fixed top-0 w-full object-cover" :src="curImage">
@@ -17,8 +18,8 @@
                 <div class="bg-black flex items-center h-16 px-4">
                     <span class="text-lg font-extrabold text-gray-400">{{ project.Name }}</span>
                 </div>
-              <div class="bg-black flex items-center h-32 px-4">
-                <span class="text-md font-bold text-gray-400" v-if="project.Data.Description">
+              <div  v-if="project.Data.Description" class="bg-black h-64 pl-4 pr-8">
+                <span class="text-md font-medium text-gray-400">
                   {{ project.Data.Description }}
                 </span>
               </div>
@@ -39,7 +40,8 @@ export default {
         return {
             api: Empty,
             projects: [],
-            imageIndex: 0
+            imageIndex: 0,
+            defaultImage: "src/assets/DalleBackground.png"
         };
     },
     computed: {
