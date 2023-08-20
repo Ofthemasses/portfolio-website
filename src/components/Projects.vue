@@ -65,12 +65,12 @@ export default {
       Empty() {
         return Empty
       },
-        nextSlide() {
-            this.imageIndex = (this.imageIndex + 1) % this.imageData.length;
-        },
-        startSlides() {
-            setInterval(this.nextSlide, 4000);
-        }
+      nextSlide() {
+        this.imageIndex = (this.imageIndex + 1) % this.imageData.length;
+      },
+      startSlides() {
+        setInterval(this.nextSlide, 4000);
+      }
     },
     async mounted() {
         switch (this.projectType) {
