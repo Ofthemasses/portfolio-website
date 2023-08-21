@@ -46,7 +46,7 @@ export default {
             api: Empty,
             projects: [],
             imageIndex: 0,
-            defaultImage: "src/assets/DalleBackground.png",
+            defaultImage: "src/assets/DalleBackground.jpg",
             loading: true
         };
     },
