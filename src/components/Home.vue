@@ -93,7 +93,7 @@ export default {
   computed:{
     imageLinks()
     {
-      return ['test1.jpeg', 'test2.jpg'];
+      return ['slide1.jpg', 'slide2.jpg', 'slide3.jpg', 'slide4.jpg'];
       // Return list of all filenames inside slidePath
     },
     curImage(){
@@ -105,7 +105,7 @@ export default {
       this.imageIndex = (this.imageIndex + 1) % this.imageLinks.length;
     },
     startSlides() {
-      setInterval(this.nextSlide, 4000);
+      setInterval(this.nextSlide, 6000);
     }
   },
   mounted(){
