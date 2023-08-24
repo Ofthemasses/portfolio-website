@@ -1,8 +1,8 @@
 <template>
-  <div class="relative flex items-center h-2/3 overflow-hidden z-10">
-    <div class="w-3/4 absolute px-40 text-gray-100 font-light">
-      <h1 class="text-5xl my-5">About</h1>
-      <p class="text-justify">Hi! I'm Finlay Metcalfe, a Student and Developer in
+  <div class="relative flex items-center h-full md:h-2/3 overflow-hidden z-10">
+    <div class="md:w-3/4 absolute px-4 md:px-40 text-gray-100 font-light">
+      <h1 class="max-md:text-center max-md:text-3xl text-5xl my-5">About</h1>
+      <p class="max-md:text-xs text-justify">Hi! I'm Finlay Metcalfe, a Student and Developer in
         <a href="https://www.google.com/maps?q=Wellington" class="hover:text-purple-300 text-purple-400">Wellington</a>, New Zealand.
       I'm studying a Bachelor of Engineering, Majoring in Software Engineering at
         <a href="https://www.wgtn.ac.nz/" class="hover:text-purple-300 text-purple-400">Victoria University of Wellington</a>.
@@ -11,18 +11,18 @@
     </div>
   </div>
   <div class="-z-10">
-    <img class="filter blur-sm brightness-[.2] fixed top-0 overflow-hidden w-full object-cover" :src="curImage">
+    <img class="filter blur-sm brightness-[.2] fixed top-0 overflow-hidden w-full max-md:h-full object-cover" :src="curImage">
     <transition name="fade" mode="out-in">
       <div :key="curImage">
-        <img class="filter blur-sm brightness-[.2] fixed top-0 w-full object-cover" :src="curImage">
+        <img class="filter blur-sm brightness-[.2] fixed top-0 w-full mx-md:h-full object-cover" :src="curImage">
       </div>
     </transition>
     </div>
 
-  <div class="relative flex items-center bg-gray-950 h-2/3">
-    <div class="w-3/4 absolute px-40 text-gray-100 font-light right-0">
-        <h1 class="text-5xl my-5">Interests</h1>
-        <p class="text-justify">
+  <div class="relative flex items-center bg-gray-950 h-full md:h-2/3">
+    <div class="md:w-3/4 absolute px-4 md:px-40 text-gray-100 font-light right-0">
+        <h1 class="max-md:text-center max-md:text-3xl text-5xl my-5">Interests</h1>
+        <p class="max-md:text-xs text-justify">
           I have a fondness for Valve games, particularly the Half-Life series, Portal series,
           and Counter-Strike games. When it comes to gaming, my top choice is Counter-Strike: Global Offensive.
           I'm deeply invested in watching competitive Counter-Strike and proudly support
@@ -36,10 +36,10 @@
         </p>
       </div>
   </div>
-  <div class="relative flex items-center h-2/3">
-    <div class="w-3/4 absolute px-40 text-gray-100 font-light">
-      <h1 class="text-5xl my-5">What am I working on now?</h1>
-      <p class="text-justify">
+  <div class="relative flex items-center h-full md:h-2/3">
+    <div class="md:w-3/4 absolute px-4 md:px-40 text-gray-100 font-light">
+      <h1 class="max-md:text-center max-md:text-3xl text-5xl my-5">What am I working on now?</h1>
+      <p class="max-md:text-xs text-justify">
         Currently, I am working on a game in C++ using the
         <a href="https://www.libsdl.org/" class="hover:text-purple-300 text-purple-400">SDL2</a>
         library. I have slowly been trying to learn VIM, and have found that resources are scarce.
@@ -48,8 +48,8 @@
     </div>
   </div>
   <div class="relative flex items-center justify-center bg-gray-950 h-2/3">
-    <div class="w-3/4 absolute px-40 text-gray-100 font-light">
-      <h1 class="text-5xl my-5 text-center">Contact Me</h1>
+    <div class="w-full md:w-3/4 absolute mdpx-40 text-gray-100 font-light">
+      <h1 class="max-md:text-3xl text-5xl my-5 text-center">Contact Me</h1>
       <p class="text-center mt-8">
         If you want to collaborate or ask a question, get in touch!
       </p>
