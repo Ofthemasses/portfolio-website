@@ -4,8 +4,8 @@
         <span class="text-9xl text-gray-200 animate-pulse">Ⲗ</span>
       </div>
     </transition>
-    <div class="relative flex items-center h-2/3 overflow-hidden z-10">
-        <div class="absolute px-40 text-5xl text-gray-100 font-light">{{ api.apiName() }}</div>
+    <div class="relative flex max-md:justify-center items-center h-2/3 overflow-hidden z-10">
+        <div class="absolute px-40 max-md:text-3xl text-5xl text-gray-100 max-md:text-center font-light">{{ api.apiName() }}</div>
     </div>
     <div class="-z-10">
       <img v-if="imageData.length == 0" class="transform scale-110 filter brightness-[.3] h-full fixed top-0 overflow-hidden w-full object-cover" :src="defaultImage">
@@ -16,7 +16,7 @@
             </div>
         </transition>
     </div>
-    <div v-if="api.apiName() != Empty().apiName()" class="relative grid grid-cols-4 gap-5 px-8 py-8 bg-gradient-to-t from-gray-900 to-transparent">
+    <div v-if="api.apiName() != Empty().apiName()" class="relative md:grid md:grid-cols-4 md:gap-5 md:px-8 py-8 bg-gradient-to-t from-gray-900 to-transparent">
         <a v-for="project in projects" :href="project.Link">
             <div class="bg-gray-900 max-w-md rounded overflow-hidden shadow-lg shadow-gray-800">
                 <img class="m-auto" :src="project.Data.Image" v-if="project.Data.Image">
