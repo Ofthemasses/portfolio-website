@@ -1,8 +1,32 @@
 <template>
-  <div class="relative flex items-center h-full md:h-2/3 overflow-hidden z-10">
-    <div class="md:w-3/4 absolute px-4 md:px-40 text-gray-100 font-light">
-      <h1 class="max-md:text-center max-md:text-3xl text-5xl my-5">About</h1>
-      <p class="max-md:text-xs text-justify">Hi! I'm Finlay Metcalfe, a Student and Developer in
+  <div class="relative flex justify-center items-center bg-gradient-to-tr from-green-500 to-yellow-500 h-full md:h-2/3 z-10">
+    <div class="md:w-3/4 absolute px-4 md:px-20 text-center text-white font-light bg-gray-950 bg-opacity-50 py-10">
+      <h1 class="max-md:text-3xl text-5xl my-5">VimVentures</h1>
+      <p class="max-md:text-xs">
+        Embark on 'VimVentures' - an interstellar coding journey!
+        <br>
+        <br>
+        I am currently working on a game to teach VIM, the game is written in C++ using the
+        <a href="https://www.libsdl.org/" class="hover:text-purple-300 text-purple-400">SDL2</a>
+        Library. My philosophy in making this game is to:
+      </p>
+      <ul class="p-2"> 
+        <li class="ml-6 py-2">
+          A. Make learning Vim fun for all levels of users, this entails a feature complete game with a tutor.
+        </li>
+        <li class="ml-6 py2">
+          B. Maintaining an open policy on all works in this project, including providing access to code, assets and resources for non-commercial learning purposes.
+        </li>
+      </ul>
+      <p class="max-md:text-xs py-2">
+        You can see the project here on GitHub, a project wiki is soon to come.
+      </p>
+    </div>
+  </div>
+  <div class="relative flex justify-center items-center h-full md:h-2/3 overflow-hidden z-10">
+    <div class="md:w-3/4 absolute text-center px-4 md:px-20 text-gray-100 font-light">
+      <h1 class="max-md:text-3xl text-5xl my-5">About</h1>
+      <p class="max-md:text-xs">Hi! I'm Finlay Metcalfe, a Student and Developer in
         <a href="https://www.google.com/maps?q=Wellington" class="hover:text-purple-300 text-purple-400">Wellington</a>, New Zealand.
       I am in my honours year studying a Bachelor of Engineering, Majoring in Software Engineering at
         <a href="https://www.wgtn.ac.nz/" class="hover:text-purple-300 text-purple-400">Victoria University of Wellington</a>.
@@ -18,42 +42,32 @@
       </div>
     </transition>
     </div>
-
-  <div class="relative flex items-center bg-gray-950 h-full md:h-2/3">
-    <div class="md:w-3/4 absolute px-4 md:px-40 text-gray-100 font-light right-0">
-        <h1 class="max-md:text-center max-md:text-3xl text-5xl my-5">Interests</h1>
-        <p class="max-md:text-xs text-justify">
+  <div class="relative flex justify-center items-center bg-gray-950 h-full md:h-2/3">
+    <div class="md:w-3/4 absolute text-center px-4 md:px-20 text-gray-100 font-light">
+        <h1 class="max-md:text-3xl text-5xl my-5">Interests</h1>
+        <p class="max-md:text-xs">
           I have a wide range of interests, here is a list of the things I am interested in at the moment:
-          <ul class="list-disc py-2">
-            <li class="py-2 ml-8">
-              I have a fondness for Valve games, particularly the Half-Life series, Portal series, and Counter-Strike games.
+          <ul class="py-2">
+            <li class="py-2">
+              <b class="font-bold">Video Games</b> particularly the Half-Life series, Portal series, and Counter-Strike games.
             </li>
-            <li class="py-2 ml-8">
-              I have a passion for Music, I play piano and enjoy listening to bands like Pink Floyd, Led Zeppelin, and I am always on the look out for new music! On piano I enjoy playing songs by The Doors, Genesis and Lou Reed. 
+            <li class="py-2">
+              <b class="font-bold">Music</b>, I play piano and enjoy listening to bands like Pink Floyd, Led Zeppelin, and I am always on the look out for new music! On piano I enjoy playing songs by The Doors, Genesis and Lou Reed. 
             </li>
-            <li class="py-2 ml-8">
-                I am learning Finnish, and enjoy watching some Finnish TV shows. Minä en konjugation suomalainen sanat hyvä, mutta yrittän!
+            <li class="py-2">
+                I am learning <b class="font-bold">Finnish</b> and enjoy watching 
+                <a href="https://areena.yle.fi/tv" class="hover:text-purple-300 text-purple-400">Yle Areena</a>.
+                Minä en konjugation suomalainen sanat hyvä, mutta yrittän!
             </li>
-            <li class="py-2 ml-8">
-                Outside of software engineering, I have a general interest in engineering. I enjoy activities like assembling computers and working on cars, anything I can get my hands on.
+            <li class="py-2">
+                <b class="font-bold">Engineering</b>. I enjoy activities like assembling computers and working on cars, anything I can get my hands on!
             </li>
           </ul>
         </p>
       </div>
   </div>
-  <div class="relative flex items-center h-full md:h-2/3">
-    <div class="md:w-3/4 absolute px-4 md:px-40 text-gray-100 font-light">
-      <h1 class="max-md:text-center max-md:text-3xl text-5xl my-5">What am I working on now?</h1>
-      <p class="max-md:text-xs text-justify">
-        Currently, I am working on a game in C++ using the
-        <a href="https://www.libsdl.org/" class="hover:text-purple-300 text-purple-400">SDL2</a>
-        library. I have slowly been trying to learn VIM, and have found that resources are scarce.
-        I want to learn more C++ and I decided that creating a game to teach VIM would be a fun and useful project.
-      </p>
-    </div>
-  </div>
-  <div class="relative flex items-center justify-center bg-gray-950 h-2/3">
-    <div class="w-full md:w-3/4 absolute mdpx-40 text-gray-100 font-light">
+  <div class="relative flex items-center justify-center md:h-2/3">
+    <div class="w-full md:w-3/4 absolute md:px-40 text-gray-100 font-light">
       <h1 class="max-md:text-3xl text-5xl my-5 text-center">Contact Me</h1>
       <p class="text-center mt-8">
         If you want to collaborate or ask a question, get in touch!
