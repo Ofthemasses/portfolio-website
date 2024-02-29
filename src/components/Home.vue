@@ -4,7 +4,7 @@
       <h1 class="max-md:text-center max-md:text-3xl text-5xl my-5">About</h1>
       <p class="max-md:text-xs text-justify">Hi! I'm Finlay Metcalfe, a Student and Developer in
         <a href="https://www.google.com/maps?q=Wellington" class="hover:text-purple-300 text-purple-400">Wellington</a>, New Zealand.
-      I'm studying a Bachelor of Engineering, Majoring in Software Engineering at
+      I am in my honours year studying a Bachelor of Engineering, Majoring in Software Engineering at
         <a href="https://www.wgtn.ac.nz/" class="hover:text-purple-300 text-purple-400">Victoria University of Wellington</a>.
         I use this website to host projects I am working on. This includes repositories, games and steam workshop content.
       </p>
@@ -23,16 +23,21 @@
     <div class="md:w-3/4 absolute px-4 md:px-40 text-gray-100 font-light right-0">
         <h1 class="max-md:text-center max-md:text-3xl text-5xl my-5">Interests</h1>
         <p class="max-md:text-xs text-justify">
-          I have a fondness for Valve games, particularly the Half-Life series, Portal series,
-          and Counter-Strike games. When it comes to gaming, my top choice is Counter-Strike: Global Offensive.
-          I'm deeply invested in watching competitive Counter-Strike and proudly support
-          <a href="https://www.hltv.org/team/5995/g2" class="hover:text-purple-300 text-purple-400">G2 Esports</a>.<br><br>
-          Outside of gaming I have a passion for Music, I play piano and enjoy listening to bands like Pink Floyd, Led Zeppelin and
-          <a href="https://open.spotify.com/playlist/5lUlPhs6iKaWjpuAAbZ4pj?si=1bad6d6d0f694d2f"
-             class="hover:text-purple-300 text-purple-400">more</a>.<br><br>
-          But that's not where my interests end - I also have a keen passion for hands-on engineering.
-          I thoroughly enjoy activities like assembling computers and working on cars.
-          The process of creating and tinkering gives me a real sense of accomplishment and excitement.
+          I have a wide range of interests, here is a list of the things I am interested in at the moment:
+          <ul class="list-disc py-2">
+            <li class="py-2 ml-8">
+              I have a fondness for Valve games, particularly the Half-Life series, Portal series, and Counter-Strike games.
+            </li>
+            <li class="py-2 ml-8">
+              I have a passion for Music, I play piano and enjoy listening to bands like Pink Floyd, Led Zeppelin, and I am always on the look out for new music! On piano I enjoy playing songs by The Doors, Genesis and Lou Reed. 
+            </li>
+            <li class="py-2 ml-8">
+                I am learning Finnish, and enjoy watching some Finnish TV shows. Minä en konjugation suomalainen sanat hyvä, mutta yrittän!
+            </li>
+            <li class="py-2 ml-8">
+                Outside of software engineering, I have a general interest in engineering. I enjoy activities like assembling computers and working on cars, anything I can get my hands on.
+            </li>
+          </ul>
         </p>
       </div>
   </div>
