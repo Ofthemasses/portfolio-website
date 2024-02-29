@@ -19,7 +19,9 @@
         </li>
       </ul>
       <p class="max-md:text-xs py-2">
-        You can see the project here on GitHub, a project wiki is soon to come.
+        You can see the project 
+        <a href="https://github.com/Ofthemasses/VimVentures" class="hover:text-purple-300 text-purple-400">here</a>
+        on GitHub, a project wiki is soon to come.
       </p>
     </div>
   </div>
