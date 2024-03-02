@@ -30,9 +30,11 @@
       <h1 class="max-md:text-3xl text-5xl my-5">About</h1>
       <p class="max-md:text-xs">Hi! I'm Finlay Metcalfe, a Student and Developer in
         <a href="https://www.google.com/maps?q=Wellington" class="hover:text-purple-300 text-purple-400">Wellington</a>, New Zealand.
-      I'm studying a Bachelor of Engineering, Majoring in Software Engineering at
+      I am in my honours year studying a Bachelor of Engineering, Majoring in Software Engineering at
         <a href="https://www.wgtn.ac.nz/" class="hover:text-purple-300 text-purple-400">Victoria University of Wellington</a>.
-        I use this website to host projects I am working on. This includes repositories, games and steam workshop content.
+        I use this website to host projects I am working on. This includes repositories, games and steam workshop content. I have an 
+        <a href="https://github.com/Ofthemasses/toru-api-handler" class="hover:text-purple-300 text-purple-400">API</a>
+        setup to display my projects, you can see them by following the links at the top of the website.
       </p>
     </div>
   </div>
