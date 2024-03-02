@@ -10,7 +10,7 @@
         <a href="https://www.libsdl.org/" class="hover:text-purple-300 text-purple-400">SDL2</a>
         Library. My philosophy in making this game is to:
       </p>
-      <ul class="p-2"> 
+      <ul class="max-md:text-xs p-2"> 
         <li class="ml-6 py-2">
           A. Make learning Vim fun for all levels of users, this entails a feature complete game with a tutor.
         </li>
@@ -51,7 +51,7 @@
         <h1 class="max-md:text-3xl text-5xl my-5">Interests</h1>
         <p class="max-md:text-xs">
           I have a wide range of interests, here is a list of the things I am interested in at the moment:
-          <ul class="py-2">
+          <ul class="max-md:text-xs py-2">
             <li class="py-2">
               <b class="font-bold">Video Games</b> particularly the Half-Life series, Portal series, and Counter-Strike games.
             </li>
@@ -70,7 +70,7 @@
         </p>
       </div>
   </div>
-  <div class="relative flex items-center justify-center md:h-2/3">
+  <div class="relative flex items-center justify-center h-full md:h-2/3">
     <div class="w-full md:w-3/4 absolute md:px-40 text-gray-100 font-light">
       <h1 class="max-md:text-3xl text-5xl my-5 text-center">Contact Me</h1>
       <p class="text-center mt-8">
