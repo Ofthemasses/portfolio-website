@@ -3,7 +3,7 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 import App from './App.vue';
 import Projects from "./components/Projects.vue";
 import Home from "./components/Home.vue";
-import Docs from "./components/Docs.vue";
+import VimVentures from "./components/VimVentures.vue";
 import './style.css';
 
 const router = createRouter({
@@ -19,6 +19,7 @@ const router = createRouter({
             }
             return true;
         }},
+        { path: '/vim-ventures/', name: 'VimVentures', component: VimVentures},
         { path: '/', name: 'Home', component: Home}
     ]
 });
