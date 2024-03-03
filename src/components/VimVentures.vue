@@ -3,7 +3,7 @@
   <div class="relative flex justify-center items-center">
     <h1 class="max-md:text-3xl text-5xl py-10">VimVentures Wiki</h1>
   </div>
-  <div class="relative md:grid md:grid-cols-2 md:gap-10 md:px-8 pt-8 pb-32 bg-gradient-to-t from-gray-900 to-transparent">
+  <div class="relative md:grid grid-cols-2 min-[1000px]:grid-cols-4 md:gap-10 md:px-8 pt-8 pb-32 bg-gradient-to-t from-gray-900 to-transparent">
     <a href="docs">
       <div class="bg-gray-900 max-w-md rounded overflow-hidden shadow-lg shadow-gray-800 p-4 h-64">
         <h2 class="text-lg font-extrabold">VimVentures Code Documentation</h2>
