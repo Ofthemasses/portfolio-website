@@ -4,6 +4,7 @@ import App from './App.vue';
 import Projects from "./components/Projects.vue";
 import Home from "./components/Home.vue";
 import VimVentures from "./components/VimVentures.vue";
+import Markdown from "./components/Markdown.vue";
 import './style.css';
 
 const router = createRouter({
@@ -20,6 +21,7 @@ const router = createRouter({
             return true;
         }},
         { path: '/vim-ventures/', name: 'VimVentures', component: VimVentures},
+        { path: '/markdown/:markdownPath', name: 'Markdown', component: Markdown},
         { path: '/', name: 'Home', component: Home}
     ]
 });
