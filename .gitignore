@@ -26,3 +26,13 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+
+# Npm and Build
+package-lock.json
+/build
+
+# Updating content
+/public/vim-game-sdl2
+/public/vim-ventures
+/public/uni
+/src/manifests

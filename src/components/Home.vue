@@ -1,7 +1,7 @@
 <template>
-  <div class="relative flex justify-center items-center bg-gradient-to-tr from-green-500 to-yellow-500 h-full md:h-2/3 z-10">
+  <div class="relative flex justify-center items-center bg-gradient-to-tr from-green-500 to-yellow-500 h-full md:h-2/3 z-10 overflow-hidden">
     <div class="md:w-3/4 absolute px-4 md:px-20 text-center text-white font-light bg-gray-950 bg-opacity-50 py-10">
-      <h1 class="max-md:text-3xl text-5xl my-5">VimVentures</h1>
+      <router-link :to="'/vim-ventures'"><h1 class="hover:text-purple-300 text-purple-400 max-md:text-3xl text-5xl my-5">VimVentures</h1></router-link>
       <p class="max-md:text-xs">
         Embark on 'VimVentures' - an interstellar coding journey!
         <br>
