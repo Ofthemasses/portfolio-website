@@ -21,7 +21,8 @@
       <p class="max-md:text-xs py-2">
         You can see the project 
         <a href="https://github.com/Ofthemasses/VimVentures" class="hover:text-purple-300 text-purple-400">here</a>
-        on GitHub, a project wiki is soon to come.
+        on GitHub, and the project wiki 
+        <a href="/#/vim-ventures" class="hove:text-purple-300 text-purple-400">here</a>.
       </p>
     </div>
   </div>
@@ -64,7 +65,7 @@
                 Minä en konjugation suomalainen sanat hyvä, mutta yrittän!
             </li>
             <li class="py-2">
-                <b class="font-bold">Engineering</b>. I enjoy activities like assembling computers and working on cars, anything I can get my hands on!
+                <b class="font-bold">Engineering</b>, I enjoy activities like assembling computers and working on cars, anything I can get my hands on!
             </li>
           </ul>
         </p>
