@@ -10,8 +10,9 @@
   "dependencies": {
     "@fontsource-variable/martian-mono": "^5.0.8",
     "axios": "^1.4.0",
+    "github-markdown-css": "^5.5.1",
+    "markdown-it": "^14.0.0",
     "vue": "^3.3.4",
-    "vue-markdown-render": "^2.1.1",
     "vue-router": "^4.0.13"
   },
   "devDependencies": {
