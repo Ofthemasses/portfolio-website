@@ -30,6 +30,77 @@
     </a>
   </div>
 </div>
+<div class="relative flex justify-center items-center text-gray-100 font-light">
+  <h2 class="max-md:text-2xl text-4xl py-10">What is VimVentures?</h2>
+</div>
+<ul class="relative text-gray-100 px-16 py-10 text-left font-light">
+  <li class="pt-6">
+    I began my journey learning Vim at the end of 2022. I have learned much from the vim community and want to give back!
+  </li>
+  <li class="pt-6"> 
+    My goal is to create a fun, and accessible way to learn vim that will be useful for users of any proficiency. Here are some of the planned features:
+  </li> 
+  <li class="pt-6 ml-6 list-disc">
+    <b class="font-bold">Fun and Functionality Combined</b>: This isn't just any game; it's a vim-learning experience set against the backdrop of an interstellar voyage. There will be upgrades to your ship at the various stations you stop by, and a story that will keep you engaged throughout your journey.
+  </li>
+  <li class="pt-6 ml-6 list-disc">  
+    <b class="font-bold">Thrilling Time-Sensitive Missions</b>: Tackle urgent code repairs to keep your spaceship on course, adding a thrilling aspect to your learning.
+  </li>  
+  <li class="pt-6 ml-6 list-disc">
+    <b class="font-bold">VentureTutor (Name is WIP)</b>: As you progress through missions, the game tracks actions you might have missed, aiming to enhance your vim efficiency for subsequent voyages. Whether you complete your mission or not, you'll receive a list of your most missed actions, complete with demonstrations of where an alternative action could have been more efficient.
+  <br>
+  <div class="flex pt-4">
+    <p class="pr-4">
+    E.g.  
+    </p>
+    <code class="bg-gray-950 px-2 py-1">
+      You pressed 'x' the most efficient command here would be 'diw'
+    </code>
+  </div>
+  </li>
+  <li class="pt-6">
+    If you want to contact me about VimVentures, my contact details are at the bottom of this website's 
+    <a href="/" class="hover:text-purple-300 text-purple-400">home page</a>.
+  </li>
+</ul>
+<div class="relative flex justify-center items-center text-gray-100 font-light">
+  <h2 class="max-md:text-2xl text-4xl py-10">Project Philosophy</h2>
+</div>
+<div class="relative text-gray-100 px-16 py-10 text-left font-light">
+  <p>
+    I firmly believe that learning resources should be publicly available and accessible. Therefore, VimVentures is not written in a game engine, but 
+    <a href="https://www.libsdl.org/" class="hover:text-purple-300 text-purple-400">SDL2</a>.
+    This choice will allow for the creation of a game that can be accessed on a wider range of hardware. Additionally, the game code is licensed under the 
+    <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" class="hover:text-purple-300 text-purple-400">AGPLv3</a>
+    license, and all assets under the
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" class="hover:text-purple-300 text-purple-400">CC BY-NC-SA license</a>.
+    These licenses are copyleft, allowing the resources to be used in other open-source projects, and preventing any of the code and assets from being sold under any circumstances. The game will remain free, as will the source code and assets; this principle will <b class="font-bold">never</b> change.
+  </p>
+</div>
+<div class="relative flex justify-center items-center text-gray-100 font-light">
+  <h2 class="max-md:text-2xl text-4xl py-10">FAQ</h2>
+</div>
+<ul class="relative text-gray-100 px-16 py-10 text-left font-light">
+  <li class="pt-6">
+    Q: I want to contribute to the project, how do I do this?
+  </li>
+  <li class="pt-6">
+    A: Currently, my skills in SDL2 and C++ are limited. This means that I cannot in good conscious accept any PRs into the project code base. Simple changes and non code related changes may be considered, but for now the project is <b class="font-bold">mostly closed to contributions</b>.
+  </li>
+  <li class="pt-12">
+    Q: I am unsure if I am following the licensing rules.
+  </li>
+  <li class="pt-6">
+    A: Contact me.
+  </li>
+  <li class="pt-12">
+    Q: I want to suggest changes, where do I do this?
+  </li>
+  <li class="pt-6">
+    A: If it is a bug, please use the GitHub issues system. Otherwise, if it is a sizeable feature please contact me. Credit will be provided if it is the latter.
+  </li>
+</ul>
+<span class="p-12"/>
 </template>
 
 <script>
