@@ -22,7 +22,7 @@
         <p class="pt-2 pr-8">The VimVentures repository hosted on GitHub.</p>
       </div>
     </a>
-    <a href="uni">
+    <a href="/#/uni">
       <div class="bg-gray-900 max-w-md rounded overflow-hidden shadow-lg shadow-gray-800 p-4 h-64">
         <h2 class="text-lg font-extrabold">BE(Hons) Resources</h2>
         <p class="pt-2 pr-8">VimVentures is also my for my honours level engineering project, resources and files are openly accessable.</p>
