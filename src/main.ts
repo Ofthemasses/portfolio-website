@@ -25,7 +25,7 @@ const router = createRouter({
         { path: '/vim-ventures/', name: 'VimVentures', component: VimVentures},
         { path: '/open-fpga-console/', name: 'OpenFPGAConsole', component: OpenFPGAConsole},
         { path: '/markdown/:markdownPath*', name: 'Markdown', component: Markdown},
-        { path: '/uni/', name: 'Uni', component: Uni},
+        { path: '/uni/:id', name: 'Uni', component: Uni},
         { path: '/', name: 'Home', component: Home}
     ]
 });

@@ -18,7 +18,7 @@
         <h2 class="text-lg font-extrabold">Repository</h2>
         <p class="pt-2 pr-8">The OpenFPGAConsole repository will be linked once background research is complete.</p>
       </div>
-    <a href="/#/uni">
+    <a href="/#/uni/masters">
       <div class="bg-gray-900 max-w-md rounded overflow-hidden shadow-lg shadow-gray-800 p-4 h-64">
         <h2 class="text-lg font-extrabold">Resources</h2>
         <p class="pt-2 pr-8">Academic Resources for the OpenFPGAConsole Project</p>
