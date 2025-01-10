@@ -32,7 +32,7 @@ package-lock.json
 /build
 
 # Updating content
-/public/vim-game-sdl2
+/public/md
 /public/vim-ventures
 /public/uni
 /src/manifests

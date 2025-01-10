@@ -4,6 +4,7 @@ import App from './App.vue';
 import Projects from "./components/Projects.vue";
 import Home from "./components/Home.vue";
 import VimVentures from "./components/VimVentures.vue";
+import OpenFPGAConsole from "./components/OpenFPGAConsole.vue";
 import Markdown from "./components/Markdown.vue";
 import Uni from "./components/Uni.vue";
 import './style.css';
@@ -22,8 +23,9 @@ const router = createRouter({
             return true;
         }},
         { path: '/vim-ventures/', name: 'VimVentures', component: VimVentures},
-        { path: '/markdown/:markdownPath', name: 'Markdown', component: Markdown},
-        { path: '/uni/', name: 'Uni', component: Uni},
+        { path: '/open-fpga-console/', name: 'OpenFPGAConsole', component: OpenFPGAConsole},
+        { path: '/markdown/:markdownPath*', name: 'Markdown', component: Markdown},
+        { path: '/uni/:id', name: 'Uni', component: Uni},
         { path: '/', name: 'Home', component: Home}
     ]
 });
