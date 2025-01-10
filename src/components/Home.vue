@@ -1,4 +1,50 @@
 <template>
+  <div class="relative flex justify-center items-center bg-gradient-to-tr from-red-500 to-red-800 h-full md:h-2/3 z-10 overflow-hidden">
+    <div class="md:w-3/4 absolute px-4 md:px-20 text-center text-white font-light bg-gray-950 bg-opacity-50 py-10">
+      <router-link :to="'/open-fpga-console'"><h1 class="hover:text-purple-300 text-purple-400 max-md:text-3xl text-5xl my-5">Open FPGA Console</h1></router-link>
+      <p class="max-md:text-xs">
+        I am currently working on an open-source FPGA console as a part of my Masters Thesis. This project seeks to improve the area of open-source FPGA development. The project goals are to: </p>
+      <ul class="max-md:text-xs p-2 list-decimal list-inside"> 
+        <li class="ml-6 py-2">
+To Create an FPGA Game Console        </li>
+        <li class="ml-6 py2">
+        Make Use of Existing Open-Source IPs and Graphics
+            APIs</li>
+        <li class="ml-6 py-2">
+          Create a Game Tech Demo on the Console
+        </li>
+        <li class="ml-6 py-2">
+              Stay Accountable to the Philosophical Goals
+  of the Project</li>
+      </ul>
+      <p class="max-md:text-xs py-2">
+        The project is currently in a research phase, but as time goes on links to the project repository and a official name for the console will be developed. You can see more information such
+        as meeting logs, the project philosophy and a more detailed explination of the project goals 
+        <a href="/#/open-fpga-console" class="hove:text-purple-300 text-purple-400">here</a>.
+      </p>
+    </div>
+  </div>
+  <div class="relative flex justify-center items-center h-full md:h-2/3 overflow-hidden z-10">
+    <div class="md:w-3/4 absolute text-center px-4 md:px-20 text-gray-100 font-light">
+      <h1 class="max-md:text-3xl text-5xl my-5">About</h1>
+      <p class="max-md:text-xs">Hi! I'm Finlay Metcalfe, a Student and Developer in
+        <a href="https://www.google.com/maps?q=Wellington" class="hover:text-purple-300 text-purple-400">Wellington</a>, New Zealand.
+      I currently have a Bachelor of Engineering with Honours, Majoring in Software Engineering. I am currently studying towards a Masters of Engineering by Thesis at
+        <a href="https://www.wgtn.ac.nz/" class="hover:text-purple-300 text-purple-400">Victoria University of Wellington</a>.
+        I use this website to host projects I am working on. This includes repositories, games and steam workshop content. I have an 
+        <a href="https://github.com/Ofthemasses/toru-api-handler" class="hover:text-purple-300 text-purple-400">API</a>
+        setup to display my projects, you can see them by following the links at the top of the website.
+      </p>
+    </div>
+  </div>
+  <div class="-z-10">
+    <img class="filter blur-sm brightness-[.2] fixed top-0 overflow-hidden w-full max-md:h-full object-cover" :src="curImage">
+    <transition name="fade" mode="out-in">
+      <div :key="curImage">
+        <img class="filter blur-sm brightness-[.2] fixed top-0 w-full mx-md:h-full object-cover" :src="curImage">
+      </div>
+    </transition>
+    </div>
   <div class="relative flex justify-center items-center bg-gradient-to-tr from-green-500 to-yellow-500 h-full md:h-2/3 z-10 overflow-hidden">
     <div class="md:w-3/4 absolute px-4 md:px-20 text-center text-white font-light bg-gray-950 bg-opacity-50 py-10">
       <router-link :to="'/vim-ventures'"><h1 class="hover:text-purple-300 text-purple-400 max-md:text-3xl text-5xl my-5">VimVentures</h1></router-link>
@@ -6,7 +52,7 @@
         Embark on 'VimVentures' - an interstellar coding journey!
         <br>
         <br>
-        I am currently working on a game to teach VIM, the game is written in C++ using the
+        In my free time, I am working on a game to teach VIM, the game is written in C++ using the
         <a href="https://www.libsdl.org/" class="hover:text-purple-300 text-purple-400">SDL2</a>
         Library. My philosophy in making this game is to:
       </p>
@@ -26,28 +72,7 @@
       </p>
     </div>
   </div>
-  <div class="relative flex justify-center items-center h-full md:h-2/3 overflow-hidden z-10">
-    <div class="md:w-3/4 absolute text-center px-4 md:px-20 text-gray-100 font-light">
-      <h1 class="max-md:text-3xl text-5xl my-5">About</h1>
-      <p class="max-md:text-xs">Hi! I'm Finlay Metcalfe, a Student and Developer in
-        <a href="https://www.google.com/maps?q=Wellington" class="hover:text-purple-300 text-purple-400">Wellington</a>, New Zealand.
-      I am in my honours year studying a Bachelor of Engineering, Majoring in Software Engineering at
-        <a href="https://www.wgtn.ac.nz/" class="hover:text-purple-300 text-purple-400">Victoria University of Wellington</a>.
-        I use this website to host projects I am working on. This includes repositories, games and steam workshop content. I have an 
-        <a href="https://github.com/Ofthemasses/toru-api-handler" class="hover:text-purple-300 text-purple-400">API</a>
-        setup to display my projects, you can see them by following the links at the top of the website.
-      </p>
-    </div>
-  </div>
-  <div class="-z-10">
-    <img class="filter blur-sm brightness-[.2] fixed top-0 overflow-hidden w-full max-md:h-full object-cover" :src="curImage">
-    <transition name="fade" mode="out-in">
-      <div :key="curImage">
-        <img class="filter blur-sm brightness-[.2] fixed top-0 w-full mx-md:h-full object-cover" :src="curImage">
-      </div>
-    </transition>
-    </div>
-  <div class="relative flex justify-center items-center bg-gray-950 h-full md:h-2/3">
+  <div class="relative flex justify-center items-center h-full md:h-2/3">
     <div class="md:w-3/4 absolute text-center px-4 md:px-20 text-gray-100 font-light">
         <h1 class="max-md:text-3xl text-5xl my-5">Interests</h1>
         <p class="max-md:text-xs">
@@ -71,7 +96,7 @@
         </p>
       </div>
   </div>
-  <div class="relative flex items-center justify-center h-full md:h-2/3">
+  <div class="relative flex items-center justify-center bg-gray-950 h-full md:h-2/3">
     <div class="w-full md:w-3/4 absolute md:px-40 text-gray-100 font-light">
       <h1 class="max-md:text-3xl text-5xl my-5 text-center">Contact Me</h1>
       <p class="text-center mt-8">
