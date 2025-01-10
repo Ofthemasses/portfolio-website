@@ -81,7 +81,7 @@ class="list-disc pl-8"> <li class="pt-2"> <strong>Community:</strong> The
 contributors, (hardware) open-source community and users of the project </li>
 </ul>
 
-		  <!-- Objectives Section --> <h3 class="text-lg font-bold pt-6">2.
+		  <h3 class="text-lg font-bold pt-6">2.
 Objectives</h3> <ul class="list-disc pl-8"> <li class="pt-2">Develop a project
 that meaningfully investigates and enriches the community.</li> <li
 class="pt-2">Prioritize utilizing open source for the free distribution of
@@ -94,7 +94,7 @@ defining criteria for verifying a community member's vote.</li> <li
 class="pt-2">Ensure that the manufacturing processes for project designs adhere
 to ethical standards.</li> </ul>
 
-		  <!-- Issues and Contributions Section --> <h3 class="text-lg
+		   <h3 class="text-lg
 font-bold pt-6">3. Issues and Contributions</h3> <p class="pt-2">All GitHub and
 CodeBerg issues should connect back to or reference these core topics. This
 must be completed by providing a link to a valid version of this document, and
