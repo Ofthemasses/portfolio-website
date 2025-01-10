@@ -1,5 +1,5 @@
 <template>
-<div class="bg-gradient-to-tr from-red-900 to-red-700 text-gray-100 font-light">
+<div class="pt-56 md:pt-0 bg-gradient-to-tr from-red-900 to-red-700 text-gray-100 font-light">
   <div class="relative flex justify-center items-center">
     <h1 class="max-md:text-xl text-5xl py-10">Open FPGA Console Wiki</h1>
   </div>

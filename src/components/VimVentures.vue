@@ -1,5 +1,5 @@
 <template>
-<div class="bg-gradient-to-tr from-green-500 to-yellow-500 text-gray-100 font-light">
+<div class="pt-56 md:pt-0 bg-gradient-to-tr from-green-500 to-yellow-500 text-gray-100 font-light">
   <div class="relative flex justify-center items-center">
     <h1 class="max-md:text-3xl text-5xl py-10">VimVentures Wiki</h1>
   </div>
