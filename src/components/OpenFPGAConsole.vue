@@ -8,7 +8,7 @@
         <h2 class="text-lg font-extrabold">Open FPGA Console Documentation</h2>
         <p class="pt-2 pr-8">Documentation generation to be implemented.</p>
       </div>
-    <a href="/#/markdown/root">
+    <a href="/#/markdown/fpga-game-console/root">
       <div class="bg-gray-900 max-w-md rounded overflow-hidden shadow-lg shadow-gray-800 p-4 h-64">
         <h2 class="text-lg font-extrabold">Meeting Notes</h2>
         <p class="pt-2 pr-8">Weekly Markdown Meeting Notes</p>
